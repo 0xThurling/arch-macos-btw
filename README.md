@@ -22,3 +22,11 @@ sudo nvram boot-args=-arm64e_preview_abi
 ```
 
 8. Reboot again
+
+## How to reboot yabai if something breaks
+
+```bash
+rm /tmp/yabai*
+sudo yabai --load-sa
+yabai --restart-service
+```
